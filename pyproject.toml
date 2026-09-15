@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdftool-cli"
+version = "0.1.0"
+description = "Merge, split, watermark PDFs and fill AcroForm fields from a CSV."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["pypdf>=4.0", "reportlab>=4.0"]
+
+[project.scripts]
+pdftool = "pdftool.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Kennurken/pdf-toolkit"
+
+[tool.setuptools]
+packages = ["pdftool"]
